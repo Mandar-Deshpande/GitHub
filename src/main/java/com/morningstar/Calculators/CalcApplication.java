@@ -7,6 +7,8 @@ package com.morningstar.Calculators;
  * @author mdeshpa
  *
  */
+import java.io.*;
+import java.util.*;
 public class CalcApplication implements CalcInterface {
 
 	public Double add(double input1, double input2) {
@@ -71,15 +73,29 @@ public class CalcApplication implements CalcInterface {
 		}
 	}
 	
-	public double logc(double a) {
+	public Double logc(double a) {
 	   return Math.log(a);
 	
 	
 	}
 
-	public double display_PI()
+	public Double display_PI()
 	{
 		return Math.PI();
+	}
+	
+	public Double sin(double a)
+	{
+		
+		return Math.sin(Math.toRadians(a));
+		
+	}
+	
+	public Double cos(double a)
+	{
+		
+		return Math.cos(Math.toRadians(a));
+		
 	}
 	
 }

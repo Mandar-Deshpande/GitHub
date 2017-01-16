@@ -26,4 +26,8 @@ public interface CalcInterface {
 	public Double logc(double input1);
 	
 	public Double display_PI();
+		
+	public Double sin(double d);
+	
+	public Double cos(double d);
 }
