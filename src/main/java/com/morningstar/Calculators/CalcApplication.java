@@ -70,4 +70,11 @@ public class CalcApplication implements CalcInterface {
 			return roots;
 		}
 	}
+	
+	public double logc(double a) {
+	   return Math.log(a);
+	
+	
+	}
+	
 }
