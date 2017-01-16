@@ -7,8 +7,6 @@ package com.morningstar.Calculators;
  * @author mdeshpa
  *
  */
-import java.io.*;
-import java.util.*;
 public class CalcApplication implements CalcInterface {
 
 	public Double add(double input1, double input2) {
@@ -72,30 +70,18 @@ public class CalcApplication implements CalcInterface {
 			return roots;
 		}
 	}
-	
-	public Double logc(double a) {
-	   return Math.log(a);
-	
-	
+
+	public double logc(double a) {
+		return Math.log(a);
+
 	}
 
-	public Double display_PI()
-	{
-		return Math.PI();
+	public double mod(double input1, double input2) {
+		return (input1 % input2);
 	}
-	
-	public Double sin(double a)
-	{
-		
-		return Math.sin(Math.toRadians(a));
-		
+
+	public double GeoTan(double input1) {
+		return Math.tan(input1);
 	}
-	
-	public Double cos(double a)
-	{
-		
-		return Math.cos(Math.toRadians(a));
-		
-	}
-	
+
 }

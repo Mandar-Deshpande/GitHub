@@ -18,7 +18,8 @@ public class App {
 			while (flag) {
 				System.out
 						.println("Choose Operation : \n 1.Addition \n 2.Subtraction \n 3.Multiplication \n 4.Division");
-				System.out.println(" 5.Exponential \n 6.Nth root \n 7.Quadratic Equations Root \n 8.Exit \n\n\n");
+				System.out.println(
+						" 5.Exponential \n 6.Nth root \n 7.Quadratic Equations Root \n 8.Log  \n 9.Mod  \n 10.Tan  \n 11.Exit \n\n\n");
 				a = sc.nextInt();
 				switch (a) {
 				case 1:
@@ -82,6 +83,23 @@ public class App {
 							+ output[0] + "," + output[1] + "}");
 					break;
 				case 8:
+					System.out.println("Log of Number");
+					System.out.println("Enter Number :");
+					input1 = sc.nextDouble();
+					System.out.println("Log of " + input1 + " = " + calc.logc(input1));
+				case 9:
+					System.out.println("Mod of Two Numbers");
+					System.out.println("Enter Number 1 :");
+					input1 = sc.nextDouble();
+					System.out.println("Enter (Mod of) Number 2 as :");
+					input2 = sc.nextDouble();
+					System.out.println("Mod of " + input1 + " % " + input2 + " = " + calc.mod(input1, input2));
+				case 10:
+					System.out.println("Tan of Number");
+					System.out.println("Enter degree in Radians :");
+					input1 = sc.nextDouble();
+					System.out.println("Tan(" + input1 + ") = " + calc.GeoTan(input1));
+				case 11:
 					System.out.println("\n Thank you for using calculator system ");
 					flag = false;
 					break;

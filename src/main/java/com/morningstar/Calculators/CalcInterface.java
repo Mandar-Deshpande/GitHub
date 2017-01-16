@@ -22,12 +22,11 @@ public interface CalcInterface {
 	public Double nroot(double input1, double input2);
 
 	public double[] qroot(double input1, double input2, double input3);
-	
-	public Double logc(double input1);
-	
-	public Double display_PI();
-		
-	public Double sin(double d);
-	
-	public Double cos(double d);
+
+	public double logc(double a);
+
+	public double mod(double input1, double input2);
+
+	public double GeoTan(double input1);
+
 }

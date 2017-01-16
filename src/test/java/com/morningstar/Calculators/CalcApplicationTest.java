@@ -146,6 +146,28 @@ public class CalcApplicationTest {
 		assertArrayEquals(ExpectedOut, ActualOut, 0.0001);
 	}
 
+	/**
+	 * Test method for
+	 * {@link com.morningstar.Calculators.CalcApplication#Log(double)} .
+	 */
+	@Test
+	public void testLogc() {
+		double ExpectedOut = 1.1760912590556812420812890085306;
+		double ActualOut = cl.logc(15);
+		assertEquals(ExpectedOut, ActualOut, 0.0001);
+	}
+
+	/**
+	 * Test method for
+	 * {@link com.morningstar.Calculators.CalcApplication#Tan(double)} .
+	 */
+	@Test
+	public void testTan() {
+		double ExpectedOut = 0.26794919243112270647255365849413;
+		double ActualOut = cl.GeoTan(15);
+		assertEquals(ExpectedOut, ActualOut, 0.0001);
+	}
+
 	public static void main(String[] args) throws Exception {
 		JUnitCore.main("com.morningstar.Calculators.CalcApplicationTest");
 	}
