@@ -76,5 +76,10 @@ public class CalcApplication implements CalcInterface {
 	
 	
 	}
+
+	public double display_PI()
+	{
+		return Math.PI();
+	}
 	
 }

@@ -24,4 +24,6 @@ public interface CalcInterface {
 	public double[] qroot(double input1, double input2, double input3);
 	
 	public Double logc(double input1);
+	
+	public Double display_PI();
 }
